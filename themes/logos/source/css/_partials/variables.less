@@ -102,16 +102,16 @@
 @letter-spacing-base:  0;
 @letter-spacing-loose: 0.02em;
 // : letter-spacing-applications
-@letter-spacing--body:         @letter-spacing-base;
-@letter-spacing--headings:     @letter-spacing-base;
-@letter-spacing--h1:           @letter-spacing-tight;
-@letter-spacing--h2:           @letter-spacing-tight;
-@letter-spacing--h3:           @letter-spacing-tight;
+@letter-spacing--body:     @letter-spacing-base;
+@letter-spacing--headings: @letter-spacing-base;
+@letter-spacing--h1:       @letter-spacing-tight;
+@letter-spacing--h2:       @letter-spacing-tight;
+@letter-spacing--h3:       @letter-spacing-tight;
 
 // screen widths
 @width-screen-sm-min: 400px;
-@width-screen-md-min: 768px;
-@width-screen-lg-min: 1116px; // width of wide images
+@width-screen-md-min: 800px;
+@width-screen-lg-min: 1200px; // width of wide images
 @width-screen-xs-max: (@width-screen-sm-min - 1);
 @width-screen-sm-max: (@width-screen-md-min - 1);
 @width-screen-md-max: (@width-screen-lg-min - 1);
@@ -120,4 +120,4 @@
 @container-gutter:             1rem;
 @container-gutter-px:          (unit(@container-gutter) * @font-size-px-base);
 @max-width--container--narrow: 39rem; // a comfortable measure
-@max-width--container--wide:   (@width-screen-lg-min - @container-gutter-px * 2); // TO DO: think about
+@max-width--container--wide:   1400px;

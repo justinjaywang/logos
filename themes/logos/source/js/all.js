@@ -35,7 +35,7 @@
 (function() {
   var container;
 
-  container = document.querySelector(".page-main--index");
+  container = document.querySelector(".page-index");
 
   if (container) {
     imagesLoaded(container, function() {
