@@ -1,6 +1,6 @@
 <article class="postPreview<% if (post.wide) { %> wide<% } %>" data-post-id="<%= post._id %>">
   <a class="postPreview-link" href="<%- url_for(post.path) %>">
     <% if (post.image) { %><img class="postPreview-image" src="<%= theme.image_prefix + post.image %>"><% } %>
-    <h2 class="post-title"><%= post.title %></h2>
+    <h4 class="post-title"><%= post.title %></h4>
   </a>
 </article>

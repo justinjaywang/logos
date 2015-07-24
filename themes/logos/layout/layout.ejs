@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <%- partial('_partials/head') %>
-<body>
-  <%- partial('_partials/page-header', null, {cache: !config.relative_link}) %>
-  <%- body %>
-  <!--<%- partial('_partials/page-footer', null, {cache: !config.relative_link}) %>-->
+<body class="page">
+  <div class="wrap">
+    <%- partial('_partials/page-header', null, {cache: !config.relative_link}) %>
+    <%- body %>
+    <!--<%- partial('_partials/page-footer', null, {cache: !config.relative_link}) %>-->
+  </div>
   <%- partial('_partials/scripts') %>
 </body>
 </html>
