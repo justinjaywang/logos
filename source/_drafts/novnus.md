@@ -1,5 +1,5 @@
 title: Novnus
-date: 2015-07-25 14:02:24
+date: 2011-12
 image: novnus.svg
 wide:
 fade: 1

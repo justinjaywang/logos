@@ -1,5 +1,5 @@
 title: Mezu
-date: 2015-07-25 14:02:30
+date: 2011-10
 image: mezu.svg
 wide:
 fade:

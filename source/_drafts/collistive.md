@@ -1,5 +1,5 @@
 title: Collistive
-date: 2015-07-25 14:02:21
+date: 2012-04
 image: collistive.svg
 wide: 1
 fade: 1
