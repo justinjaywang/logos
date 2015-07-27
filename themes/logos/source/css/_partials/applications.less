@@ -21,10 +21,10 @@ body {
   .font-smoothing(antialiased);
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  z-index: @z-index--body;
-  // display: flex; // for sticky footer
-  // min-height: 100vh;
-  // flex-direction: column;
+  // z-index: @z-index--body;
+  display: flex; // for sticky footer
+  min-height: 100vh;
+  flex-direction: column;
   // background: #eee; // TEMP
 }
 
@@ -76,45 +76,39 @@ p {
 
 // containers
 .wrap {
-  padding: @padding--wrap;
-  // padding-right: (@container-gutter / 2);
-  // background: rgba(0,0,0,0.05); // TEMP
+  margin: 0 @margin--wrap;
+  flex: 1;
 }
 .container {
   width: 100%;
+  max-width: @max-width--container;
   .margin-center();
-  // background: rgba(0,0,0,0.1); // TEMP
-}
-// .container--padded {
-//   padding-left: (@container-gutter / 2);
-//   padding-right: (@container-gutter / 2);
-// }
-.container--narrow {
-  &:extend(.container);
-  max-width: @max-width--container--narrow;
-}
-.container--wide {
-  &:extend(.container);
-  max-width: @max-width--container--wide;
 }
 
 // main
 .page-header {
-  // &:extend(.container--wide);
-  // &:extend(.container--padded);
-  // background: red; // TEMP
-  // padding: @padding--wrap; // TEMP
-  position: fixed; // TEMP
-  z-index: @z-index--page-header;
+  // z-index: @z-index--page-header;
+  text-align: right;
+  // padding: 2.7778%;
+  padding: 1.5rem;
+}
+.page-title {
+  color: #aaa; // TEMP
+  font-size: @size-em-smallest;
+  letter-spacing: 0.02em;
 }
 .page-content {
-  &:extend(.container--wide);
+  // &:extend(.container--wide);
   // &:extend(.container--padded);
 }
 .page-index {
-  padding-top: 2rem; // TEMP
-  padding-bottom: 2rem; // TEMP
-  &:extend(.container--wide);
+  // padding-top: 2rem; // TEMP
+  // padding-bottom: 2rem; // TEMP
+  &:extend(.container);
+  padding-top: 5.5556%;
+  padding-bottom: 5.5556%;
+  // padding-bottom: 11.1111%;
+  // padding: 1rem 0 3rem;
   // .clearfix();
 }
 .page-header-avatar {
@@ -158,6 +152,9 @@ p {
 @media (max-width: @width-screen-sm-max) {
   html {
     font-size: @font-size--html-sm;
+  }
+  .wrap {
+    margin: 0;
   }
   // .postPreview {
   //   .column-size(3, 1);

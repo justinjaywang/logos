@@ -1,7 +1,6 @@
 <main class="page-index">
-  <!-- <div class="column"></div> -->
-  <% var posts = site.posts.find({public: 1}).sort('date', -1); %>
-  <% page.posts.each(function(post){ %>
+  <% var posts = site.posts.sort('date', -1); %>
+  <% posts.each(function(post){ %>
     <%- partial('_partials/postPreview', {post: post}) %>
   <% }) %>
 </main>
