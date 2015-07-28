@@ -1,6 +1,8 @@
-<main class="page-index">
-  <% var posts = site.posts.sort('date', -1); %>
-  <% posts.each(function(post){ %>
-    <%- partial('_partials/postPreview', {post: post}) %>
-  <% }) %>
+<main class="page-main">
+  <section class="posts">
+    <% var posts = site.posts.sort('date', -1); %>
+    <% posts.each(function(post){ %>
+      <%- partial('_partials/post', {post: post}) %>
+    <% }) %>
+  </section>
 </main>

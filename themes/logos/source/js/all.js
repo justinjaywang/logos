@@ -35,13 +35,13 @@
 (function() {
   var container;
 
-  container = document.querySelector(".page-index");
+  container = document.querySelector(".posts");
 
   if (container) {
     imagesLoaded(container, function() {
       var pckry;
       return pckry = new Packery(container, {
-        itemSelector: ".postPreview",
+        itemSelector: ".post",
         gutter: 0
       });
     });

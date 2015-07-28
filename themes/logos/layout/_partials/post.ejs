@@ -1,14 +1,6 @@
-<article class="post" data-post-id="<%= post._id %>">
-  <header class="post-header">
-    <a href="<%- url_for(post.path) %>">
-      <%- partial('post-date', {date_format: config.date_format}) %>
-      <h1 class="post-title"><%= post.title %></h1>
-    </a>
-  </header>
-  <section class="post-content">
-    <%- post.content %>
-  </section>
-  <footer class="post-footer">
-    <%- partial('post-tag') %>
-  </footer>
+<article class="post<% if (post.wide) { %> wide<% } %>" data-post-id="<%= post._id %>">
+  <!-- <a class="post-link" href="<%- url_for(post.path) %>"> -->
+    <% if (post.image) { %><img class="post-image<% if (post.fade) { %> faded<% } %>" src="<%- url_for(post.path) %><%= post.image %>"><% } %>
+    <!-- <h4 class="post-title"><%= post.title %></h4> -->
+  <!-- </a> -->
 </article>
